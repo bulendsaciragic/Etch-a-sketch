@@ -5,25 +5,25 @@ body {
 }
 
 #sketchboard {
-    width: 560px;
-    height: 560px;
+    width: 640px;
+    height: 640px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0.5px;
     border-color: black;
+    /* box-sizing:  border-box; */
     display: flex;
     flex-flow: row wrap;
 }
 
-#squareDiv {
-    height: 24px;
-    width: 24px;
+.squareDiv {
     background-color: beige;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0.5px;
     border-color: black;
+    box-sizing: border-box;
 }
 
-#controls {
+/* #controls {
     background-color: aliceblue;
     width: 560px;
     display: flex;
@@ -31,4 +31,4 @@ body {
     gap: 20px;
     padding-left: 20px;
     padding-right: 20px;
-}
+} */
