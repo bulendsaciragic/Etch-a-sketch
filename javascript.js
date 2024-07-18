@@ -9,9 +9,6 @@ const sketchboard = document.querySelector("#sketchboard");
 
 for (let i = 0; i < (gridSize * gridSize); i++) {
 
-    // const squareDivHeight = (sketchboard.offsetHeight - 2) / gridSize;
-    // const squareDivWidth = (sketchboard.offsetHeight - 2) / gridSize;
-
     const squareDivHeight = sketchboard.clientHeight / gridSize;
     const squareDivWidth = sketchboard.clientWidth / gridSize;
     
@@ -22,6 +19,10 @@ for (let i = 0; i < (gridSize * gridSize); i++) {
     squareDiv.style.height = squareDivHeight + 'px';
     squareDiv.style.width = squareDivWidth + 'px';
 
+    function random_rgba() {
+        var o = Math.round, r = Math.random, s = 255;
+        return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+    }
 
     squareDiv.addEventListener("mouseover", function(){
     squareDiv.style.backgroundColor = "cadetblue";
